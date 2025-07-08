@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="booo">
+    <div class="my-5" id="sectionFirst">
+        <div class="container p-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-6">
+                    <img src="./dices 1.png" alt="dice images" class="img-fluid" />
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="d-flex flex-column align-items-md-end">
+                        <h1 class="fw-bolder display-1 text-nowrap">DICE GAME</h1>
+                        <button type="button" class="btn btn-dark px-md-5 px-sm-2" id="playNow">
+                            Play Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parentGame" id="sectionSecond">
+        <div class="container">
+            <div class="module-border-wrap">
+                <div class="module">
+                    <div class="child">
+                        <h2 class="fw-bolder display-7 text-nowrap text-center roundCount">Choose your Luck and Roll the
+                            Dice!</h2>
+                        <div class="btnparent">
+                            <button type="button" onclick="below7()" class="button">
+                                Below 7
+                            </button>
+                            <button type="button" onclick="lucky7()" class="button">
+                                Lucky 7
+                            </button>
+                            <button type="button" onclick="above7()" class="button">
+                                Above 7
+                            </button>
+                        </div>
+                        <div id="highlight"></div>
+                        <div class="loder"></div>
+                        <div class="resultParent"></div>
+
+                        <div class="imm"></div>
+                        <h4 class="round"></h4>
+
+
+                        <h1 class="Win-lose"></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn btn-dark px-md-5 px-sm-2 mt-1" id="showRules">
+                    Show Rules
+                </button>
+                <div id="show" class="mt-5"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
